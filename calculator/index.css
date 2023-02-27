@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+
+.calculate{
+  display: grid;
+  grid-template-columns: repeat(4,6rem);
+  grid-template-rows: minmax(6rem,auto) repeat(5,4rem);
+  gap: 3px;
+  background-color: rgba(191, 191, 191, 0.5);
+  width: calc(24*16px + 11px);
+  margin: 0 auto;
+  border: 1px solid gray;
+} 
+.output{
+
+  display: grid;
+  grid-column: 1/span 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+
+}
+.span-2{
+  grid-column: 3/span 2;
+}
+
+.span-ac-2{
+  grid-column: 1/span 2;
+}
+
+.calculate>button{
+  border: 0px;
+  background-color: #F3F2F2;
+}
+
+.calculate>button:hover{
+
+  background-color: #B5B5B5;
+}
+
+.curcent{
+  font-size: 3rem;
+}
+
+.calculate .span-2{
+  background-color:#72A2C8;
+}
+
+.calculate .span-2:hover{
+  
+  background-color:#3A8ED0;
+}
